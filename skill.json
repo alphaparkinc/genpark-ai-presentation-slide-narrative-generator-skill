@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ai-presentation-slide-narrative-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI presentation architect that converts raw data and bullet points into structured slide narratives with speaker notes and visual layout specs.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "presentation-ai",
+    "slide-generator",
+    "narrative-design",
+    "speaker-notes",
+    "pitch-deck"
+  ],
+  "inputs": {
+    "topic": {
+      "type": "string"
+    },
+    "key_data_points": {
+      "type": "array"
+    },
+    "audience_type": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "slide_deck": {
+      "type": "array"
+    },
+    "speaker_notes": {
+      "type": "object"
+    },
+    "estimated_presentation_minutes": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
